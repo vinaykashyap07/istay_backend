@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Fill Waiting Time</title>
+</head>
+
+<body>
+
+	<form action = "/" method = "post">
+		<label>Hospital ID: </label>
+		<input type = "text" name = "hospital_id" />
+		<br>
+		<label>Waiting time in minutes: </label>
+		<input type = "text" name = "waiting_time" />
+		<br>
+		<input type = "submit" value = "Submit"/>
+	</form>
+
+	<% if(message != null){ %>
+		<h4><%=message%></h4>
+	<% } %>
+	
+</body>
+
+</html>

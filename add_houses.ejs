@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="index_new.js"></script>
+	<title>Add Hospital</title>
+</head>
+
+<body>
+
+	<form action = "/admin" method = "post">
+
+		<label>House Id: </label>
+		<input type="text" name="house_id" />
+		<br>
+		<br>
+
+		<label>Name: </label>
+		<input type="text" name="house_name" />
+		<br>
+		<br>
+
+		<label>Address</label>
+		<input type = "text" name = "house_address" />
+		<br>
+		<br>
+
+		<label>House Phone Number: </label>
+		<input type="text" name="house_phone_number" />
+		<br>
+		<br>
+		
+		<fieldset>
+		<legend>Occupancy :</legend>
+		<label>Private room price  </label>
+		<input type = "text" name = "private_room" />
+		<br>
+		<br>
+		<label>Twin Sharing price </label>
+		<input type = "text" name = "twin_sharing" />
+		<br>
+		<br>
+		<label>Triple Sharing price </label>
+		<input type = "text" name = "triple_sharing" />
+		<br>
+		<br>
+		<label>Four Sharing price </label>
+		<input type = "text" name = "four_sharing" />
+		</fieldset>
+		<br>
+
+		<fieldset>      
+			<legend>Amenities</legend>      
+			<input type="checkbox" name="free_wifi" value="free_wifi">Free Wifi<br> 
+			<input type="checkbox" name="washing_mashine" value="washing_mashine">Washing Machine<br>      
+			<input type="checkbox" name="fire_extinguisher" value="fire_extinguisher">Fire Extinguisher<br>   
+			<input type="checkbox" name="ro_water" value="ro_water">R O Water<br>  
+			<input type="checkbox" name="cctv" value="cctv">CCTV<br>  
+			<input type="checkbox" name="fridge" value="fridge">Fridge<br>        
+			     
+		</fieldset> 
+		<br>
+
+		<fieldset>      
+			<legend>For Whom </legend>      
+			<input type="checkbox" name="for_boys" value="for_boys">Boys<br>      
+			<input type="checkbox" name="for_girls" value="for_girls">Girls<br>          
+		</fieldset> 
+		<br>
+		
+		<fieldset>
+		<legend>Distance from Infy :</legend>
+		<label>In KM </label>
+		<input type="text" name="distance_infy"/>
+		<br><br>
+		<label>In minutes </label>
+		<input type="text" name="time_infy"/>
+		</fieldset>
+		<br>
+		
+		<label>About Property :</label>
+		<input type="text" name="about_property" size="150" style="height: 40px;" />
+		<br>
+		<br>
+
+		<label>Rating :</label>
+		<input type="text" name="rating" />
+		<br>
+		<br>
+		
+		<input type = "submit" value = "Add"/>
+	</form>
+
+	<% if(message != null){ %>
+		<h4><%=message%></h4>
+	<% } %>
+	
+</body>
+
+</html>
